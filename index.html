@@ -1,0 +1,47 @@
+<html>
+  <head>
+  <title>Rudra's web page</title>
+  	<h4 name = "my_name" style="background-color:yellow;"> Welcome, Rudra is here !!</h4>
+  	<link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+  	<ul id = "mylist">
+  		<li> rudra pratap singh,  rudra111,   Electronics & Communication engineering,  abc@gmail.com,  20-10-2006</li>
+  	</ul>
+
+  	<div class = "centre">
+  		<button type="button" class = "register" onclick = "openForm()">Register</button>
+		<div class = "form-popup", id = "myForm">
+			<form id = my_form name = "reg_form"  method = "post" required>
+				<label for = "name"> Name : </label><br>
+				<input type = "text" name = "name" placeholder = "Rudra pratap"> <br><br>
+			
+				<label for = "emp_id"> Employee ID : </label><br>
+				<input type = "text" name = "emp_id" placeholder = "rudra111"><br><br>
+			
+				<div>
+					<label for = "dept"> Department : </label><br>
+					<input name = "dept" id = "dept" list = "dept_list" placeholder = "Department">
+					<datalist id = "dept_list">
+						<option value = "Electronics & Communication engineering">
+						<option value = "Computer Science Engineering">
+						<option value = "Civil Engineering">
+						<option value = "Chemical Engineering">
+						<option value = "Machenical Engineering">
+					</datalist>
+				</div><br>
+			
+				<label for = "email_id"> Email Id : </label><br>
+				<input type = "text" name = "email_id" placeholder = "abc@gmail.com"><br><br>
+			
+				<label for = "date"> Date of joining : </label><br>
+				<input type = "date" name = "date"><br><br>
+			
+				<button type="button" class = "addBtn" onclick = "newElement()" value="Submit">Submit</button>
+  				<button type="reset" value="Reset">Clear</button>
+			</form>
+		</div>	
+   	</div>
+   	<script src = "index.js"></script>
+  </body>
+</html>
